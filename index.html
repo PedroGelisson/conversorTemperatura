@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERSOR.mobile</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="tela">
+        <h1 id="titulo">Conversor de Temperatura</h1>
+        <div id="display">
+            <input type="number" id="entrada" placeholder="Digite a temperatura">
+            <select name="escala" id="escala">
+                <option value="0" selected></option>
+                <option value="c" >°c</option>
+                <option value="f" >°f</option>
+                <option value="k" >°k</option>
+                <option value="r" >°r</option>
+            </select>
+        </div> 
+        <div id="botao">
+            <button id="converter" onclick="convTemp(event)">Converter</button>
+        </div>
+        <div id="resultados">
+            <input type="text" id="total1" readonly>
+            <input type="text" id="total2" readonly>
+            <input type="text" id="total3" readonly>
+        </div>
+        <div id="criador">
+            <p>Created by Silva, Pedro 2022</p>
+        </div>
+    </div>
+    
+</body>
+<script src="./js/script.js"></script>
+</html>
